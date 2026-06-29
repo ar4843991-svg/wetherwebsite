@@ -79,9 +79,11 @@ function App() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-   className="text-xl font-bold text-white text-center"
+   className="text-4xl  font-bold text-white text-center"
           >
-            🌤️ Weather App
+            Weather App🌤️ <br />
+             <span className="text-[15px]">Find Your City's Temperature 🌡️</span>
+            
           </motion.h1>
 
           <SearchBar city={city} setCity={setCity} onSearch={handleSearch} />

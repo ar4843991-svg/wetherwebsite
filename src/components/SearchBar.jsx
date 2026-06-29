@@ -13,7 +13,7 @@ function SearchBar({ city, setCity, onSearch }) {
         value={city}
         onChange={(e) => setCity(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && onSearch()}
-        placeholder="City ka naam likho..."
+        placeholder=" Enter your City Name...."
         className="w-full px-4 py-3 rounded-xl text-white placeholder-white/60 outline-none text-sm"
         style={{
           background: "rgba(255,255,255,0.15)",
@@ -24,7 +24,7 @@ function SearchBar({ city, setCity, onSearch }) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={onSearch}
-        className="w-full py-3 rounded-xl text-white font-semibold text-sm"
+        className="w-full py-3 rounded-xl text-white font-semibold  text-sm"
         style={{
           background: "rgba(255,255,255,0.25)",
           border: "1px solid rgba(255,255,255,0.5)"
